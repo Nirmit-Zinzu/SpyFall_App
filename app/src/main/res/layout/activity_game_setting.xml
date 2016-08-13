@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.nirmit.spyfall.GameSetting"
+    android:background="#010f21">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/numPlayers"
+        android:id="@+id/playerNumberView"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/playerNumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/playerNumber"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:textColor="#ffffff"
+        android:textSize="21sp"
+        android:ems="8"
+        android:id="@+id/playerNumber"
+        android:layout_toEndOf="@+id/playerNumberView"
+        android:layout_marginStart="18dp"
+        android:hint="@string/numPlayersHint" />
+
+
+    <ImageButton
+       android:layout_width="wrap_content"
+       android:layout_height="170dp"
+       android:id="@+id/hostBtn"
+        android:src="@drawable/host_title"
+         android:layout_below="@+id/playerNumberView"
+         android:layout_marginTop="10dp"
+         android:scaleType="fitXY"
+         android:layout_centerHorizontal="true"
+        android:contentDescription="@string/hostGame"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:id="@+id/noHostBtn"
+        android:src="@drawable/no_host"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/noHostGame"
+        android:layout_above="@+id/showListBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showList"
+        android:id="@+id/showListBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#c2b66f"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hostBtn"
+        android:id="@+id/customEntry"
+        android:layout_marginTop="5dp"
+        android:background="#1e3250"
+        android:padding="5dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/customLocation"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/goNext"
+            android:hint="@string/locationExample"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/enterLocation"
+            android:id="@+id/note2"
+            android:layout_below="@+id/customLocation"
+            android:layout_centerHorizontal="true"
+            android:textColor="#c2b66f"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goNext"
+            android:id="@+id/goNext"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="#c2b66f"/>
+    </RelativeLayout>
+
+</RelativeLayout>

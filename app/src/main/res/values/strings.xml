@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Spy Fall</string>
+
+    <!-- Main Activity strings -->
+    <string name="title">title</string>
+    <string name="logo">logo</string>
+    <string name="webLogo">web_logo</string>
+    <string name="name">Nirmit Z.</string>
+    <string name="cont">^  CLICK TO CONTINUE  ^ </string>
+
+    <!-- Game Setting Activity strings -->
+    <string name="numPlayers">Number of Players</string>
+    <string name="numPlayersHint">3</string>
+    <string name="hostGame">Host Game IB</string>
+    <string name="noHostGame">No Host Game IB</string>
+    <string name="showList">Show List</string>
+    <string name="locationExample">e.g Casino</string>
+    <string name="enterLocation">Enter Location</string>
+    <string name="goNext"> :> </string>
+
+    <!-- Role Display Activity strings -->
+    <string name="blankPage">Blank IV</string>
+    <string name="informationPage">Information IV </string>
+    <string name="tapMeBtn">Tap Me IB</string>
+    <string name="passBtn">Pass Device IB</string>
+    <string name="locationEx">Cat</string>
+    <string name="playerNum">1</string>
+
+    <!-- End Game Activity strings -->
+    <string name="endPage">end page IV</string>
+    <string name="start">START</string>
+
+</resources>

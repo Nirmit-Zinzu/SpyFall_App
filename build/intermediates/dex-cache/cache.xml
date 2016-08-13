@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="e096a5d8343cc9c5a9f6eded36bd0f4c82f8c83e">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-24.1.0_1723afffd51272db1ca4397a10186a07f22d371b.jar" />
+    </item>
+    <item
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.0/jars/libs/internal_impl-24.1.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="8c7087216946c546f85a1242a2794c0f271e092c">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/pre-dexed/release/internal_impl-24.1.0_e5407adcf5378675cd4ed47036e3621ea7945cd0.jar" />
+    </item>
+    <item
+        jar="/Users/ninizinzu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.0/support-annotations-24.1.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="8a23146e1a8c7cb4758e3d3f62449213f1e51f67">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/pre-dexed/release/support-annotations-24.1.0_f2f685dc07428e8efb603161690d2def1ba5ea2a.jar" />
+    </item>
+    <item
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="9340c4f95a4e3916c9ad70296e24576743743712">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-24.1.0_1fff0f2471637264d219b816dba71ba65f24be10.jar" />
+    </item>
+    <item
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="ba8e8860f7e033c3a503b682337a4bafdf56e6ee">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-24.1.0_96fc10bb1ce1d76d8bc2cac478ab65e771aad9fc.jar" />
+    </item>
+    <item
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="8c854b30eca6c442fe842e66cd3b58c5dd08996f">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-24.1.0_04605575cbbbb08d87bee8dc1a2dc99035f23af6.jar" />
+    </item>
+
+</items>
