@@ -8,7 +8,7 @@ import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import java.util.Random; //
+import java.util.Random;
 
 public class DisplayRoles extends Activity {
 
