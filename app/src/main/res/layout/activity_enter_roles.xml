@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_main">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/playerInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#5f7786"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/locationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="@string/locationTitle"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#c4f3ae"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/locationEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/locationTitle"
+                android:ems="8"
+                android:gravity="center"
+                android:hint="@string/locationExample"
+                android:text=""
+                android:textColor="#bed1df"
+                android:textSize="21sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rolesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Enter Possible Roles"
+            android:textColor="#aee6f3"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/addFieldBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_btn_gamesetting"
+            android:onClick="onAddField"
+            android:text="Add Roles Field"
+            android:textColor="#d19494" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_btn_gamesetting"
+            android:text="Submit"
+            android:textColor="#b5dab2" />
+
+    </TableLayout>
+
+</ScrollView>

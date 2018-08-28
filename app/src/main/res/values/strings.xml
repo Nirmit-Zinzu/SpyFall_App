@@ -6,6 +6,8 @@
     <string name="logo">logo</string>
     <string name="webLogo">web_logo</string>
     <string name="name">Nirmit Z.</string>
+    <string name="start">START</string>
+    <string name="rules">Rules</string>
     <string name="cont">^  CLICK TO CONTINUE  ^ </string>
 
     <!-- Game Setting Activity strings -->
@@ -13,10 +15,12 @@
     <string name="numPlayersHint">3</string>
     <string name="hostGame">Host Game IB</string>
     <string name="noHostGame">No Host Game IB</string>
-    <string name="showList">Show List</string>
-    <string name="locationExample">e.g Casino</string>
-    <string name="enterLocation">Enter Location</string>
+    <string name="showList">List</string>
     <string name="goNext"> :> </string>
+
+    <!-- Enter Roles Activity strings -->
+    <string name="locationTitle">Enter a location</string>
+    <string name="locationExample">e.g Casino</string>
 
     <!-- Role Display Activity strings -->
     <string name="blankPage">Blank IV</string>
@@ -28,6 +32,11 @@
 
     <!-- End Game Activity strings -->
     <string name="endPage">end page IV</string>
-    <string name="start">START</string>
+
+    <string-array name="types">
+        <item>Mobile</item>
+        <item>Office</item>
+        <item>Home</item>
+    </string-array>
 
 </resources>

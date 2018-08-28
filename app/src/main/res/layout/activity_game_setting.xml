@@ -3,111 +3,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_main"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.nirmit.spyfall.GameSetting"
-    android:background="#010f21">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/numPlayers"
-        android:id="@+id/playerNumberView"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        android:layout_alignTop="@+id/playerNumber"
-        android:layout_alignParentStart="true"
-        android:layout_alignBottom="@+id/playerNumber"
-        android:gravity="center"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberSigned"
-        android:textColor="#ffffff"
-        android:textSize="21sp"
-        android:ems="8"
-        android:id="@+id/playerNumber"
-        android:layout_toEndOf="@+id/playerNumberView"
-        android:layout_marginStart="18dp"
-        android:hint="@string/numPlayersHint" />
-
-
-    <ImageButton
-       android:layout_width="wrap_content"
-       android:layout_height="170dp"
-       android:id="@+id/hostBtn"
-        android:src="@drawable/host_title"
-         android:layout_below="@+id/playerNumberView"
-         android:layout_marginTop="10dp"
-         android:scaleType="fitXY"
-         android:layout_centerHorizontal="true"
-        android:contentDescription="@string/hostGame"/>
-
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="170dp"
-        android:id="@+id/noHostBtn"
-        android:src="@drawable/no_host"
-        android:scaleType="fitXY"
-        android:contentDescription="@string/noHostGame"
-        android:layout_above="@+id/showListBtn"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+    tools:context="com.nirmit.spyfall.GameSetting">
 
     <Button
-        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/hostBtn"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/round_btn_gamesetting"
+        android:text="HOST Mode\n\n A player sets the game!"
+        android:textColor="#7a867c"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/hostLogoImgView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/showList"
-        android:id="@+id/showListBtn"
-        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/hostBtn"
         android:layout_alignParentEnd="true"
-        android:background="#c2b66f"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignTop="@+id/hostBtn"
+        android:layout_toEndOf="@+id/hostBtn"
+        android:background="#001fb11f"
+        android:src="@drawable/host_symbol" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/noHostLogoImgView"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/hostBtn"
-        android:id="@+id/customEntry"
-        android:layout_marginTop="5dp"
-        android:background="#1e3250"
-        android:padding="5dp">
+        android:layout_below="@+id/hostLogoImgView"
+        android:background="#18242c"
+        android:padding="10dp">
 
         <EditText
+            android:id="@+id/playerNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/customLocation"
-            android:layout_alignParentStart="true"
-            android:layout_toStartOf="@+id/goNext"
-            android:hint="@string/locationExample"
-            android:textColor="#ffffff" />
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="73dp"
+            android:ems="8"
+            android:gravity="center"
+            android:hint="@string/numPlayersHint"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
 
         <TextView
+            android:id="@+id/playerNumberView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/enterLocation"
-            android:id="@+id/note2"
-            android:layout_below="@+id/customLocation"
-            android:layout_centerHorizontal="true"
-            android:textColor="#c2b66f"/>
+            android:layout_above="@+id/playerNumber"
+            android:layout_alignStart="@+id/playerNumber"
+            android:layout_marginBottom="18dp"
+            android:gravity="center"
+            android:text="@string/numPlayers"
+            android:textColor="#c4f3ae"
+            android:textSize="25sp" />
 
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/goNext"
-            android:id="@+id/goNext"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:background="#c2b66f"/>
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/noHostLogoImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/noHostBtn"
+        android:layout_toStartOf="@+id/noHostBtn"
+        android:paddingTop="12dp"
+        android:src="@drawable/no_host_symbol" />
+
+    <Button
+        android:id="@+id/noHostBtn"
+        android:layout_width="155dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/showListBtn"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round_btn_gamesetting"
+        android:text="Everyone plays! \n\n Location picked from the list!"
+        android:textColor="#7a867c"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/showListBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/noHostLogoImgView"
+        android:background="@drawable/round_btn_main"
+        android:text="@string/showList"
+        android:textColor="#c4f3ae"
+        android:textSize="15dp" />
+
 
 </RelativeLayout>

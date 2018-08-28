@@ -3,46 +3,69 @@ package com.nirmit.spyfall;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.StateListDrawable;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 import java.util.Random;
+
 
 public class GameSetting extends Activity {
 
-    // Variables to get references to the widgets
-    RelativeLayout customEntry;
-    EditText numPlayers, customLocation;
-    Button showListBtn, goNext;
-    ImageButton hostBtn, noHostBtn;
-    TextView enterLocation;
-
     // variables to use in different activities (same copy)
-    private static String location = "";   // gets the location
-    private static int players = 0;        // number of players
+    private static String location = "";          // gets the location
+    private static int players = 0;               // number of players
+    private static Collection<String> roles;      // holds roles associated with the location
+    private static List<String> keysList;         // holds keys/ locations
+    private static Multimap<String, String>
+            gameMap = ArrayListMultimap.create(); // multimap to store key and values
 
-
+    // Variables to get references to the widgets
+    EditText numPlayers;
+    Button showListBtn, hostBtn, noHostBtn;
+    RelativeLayout playerInfo;
 
     Random rand = new Random();   // Instantiating class to get a random integer
 
-    // array to store default locations/people/item
-    private String items[] = new String[] {
-            "Airplane", "Bank", "Beach", "Broadway Theater", "Casino",
-            "Circus Tent", "Spa", "Embassy", "Hospital", "Hotel",
-            "Military Base", "Movie Studio", "Train", "Pirate Ship", "Police Station",
-            "Restaurant", "School", "Service Station", "Space Station", "Submarine",
-            "Supermarket", "University", "Office", "Art Museum", "Strip Club",
-            "Jail", "Subway", "C.N Tower", "Niagara Falls", "Camping Resourt",
-            "Beach", "Zoo", "Spa", "Amusement Park", "Capital Hill",
-            "Carnival", "Laboratory", "Sewers", "Space Station", "Ocean Liner"
-    };
+    public static String getLocation() {
+        return location;
+    }
+
+    public static void setLocation(String location) {
+        GameSetting.location = location;
+    }
+
+    public static Collection<String> getRoles() {
+        return roles;
+    }
+
+    public static void setRoles(Collection<String> roles) {
+        GameSetting.roles = roles;
+    }
+
+    public static int getPlayers() {
+        return players;
+    }
+
+    public static Multimap<String, String> getGameMap() {
+        return gameMap;
+    }
+
+    // ---- Getter methods ----
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,41 +75,42 @@ public class GameSetting extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.activity_game_setting);
+        roles = new ArrayList<>();
 
         // getting references to the widgets
-        customEntry = (RelativeLayout) findViewById(R.id.customEntry);
-        numPlayers = (EditText) findViewById(R.id.playerNumber);
-        customLocation = (EditText) findViewById(R.id.customLocation);
-        enterLocation = (TextView) findViewById(R.id.note2);
-        hostBtn = (ImageButton) findViewById(R.id.hostBtn);
-        noHostBtn = (ImageButton) findViewById(R.id.noHostBtn);
-        showListBtn = (Button) findViewById(R.id.showListBtn);
-        goNext = (Button) findViewById(R.id.goNext);
+        numPlayers = findViewById(R.id.playerNumber);
+        playerInfo = findViewById(R.id.playerInfo);
+        hostBtn = findViewById(R.id.hostBtn);
+        noHostBtn = findViewById(R.id.noHostBtn);
+        showListBtn = findViewById(R.id.showListBtn);
 
-        //this relative layout is hidden. It becomes visible when host game is selected.
-        customEntry.setVisibility(View.INVISIBLE);
+        addClickEffect(hostBtn);
+        addClickEffect(noHostBtn);
+        addClickEffect(showListBtn);
 
-        hostGame();   // host game is selected. Option of entering custom location is provided.
-        noHostGame(); // no0host, all plays.
-        showList();   // Alert dialog with default items is shown to the user
-        startGame();  // goes to the next activity.
+        // Set locations + Roles
+        setGameRoles(gameMap);
+        keysList = new ArrayList<>(gameMap.keySet());
+
+        hostGame();    // 1 narrator
+        noHostGame();  // no host, all plays.
+        showList();    // Alert dialog with default items is shown to the user
 
     }
-
-
 
     // host game selected (1 narrator).
     public void hostGame() {
         hostBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (playersEntered() == true) {
 
-                    players = Integer.parseInt(numPlayers.getText().toString());  //getting players
+                // get number of players and set up next intent
+                if (playersEntered()) {
 
-                    // relative layout becomes visible to allow the user to enter a custom location
-                    customEntry.setVisibility(View.VISIBLE);
+                    players = Integer.parseInt(numPlayers.getText().toString()); // getting players
 
+                    Intent intent = new Intent(GameSetting.this, EnterRoles.class);
+                    startActivity(intent);
 
                 } else {
                     // error is displayed if wrong input
@@ -94,6 +118,7 @@ public class GameSetting extends Activity {
                 }
             }
         });
+
     }
 
     // no-host game selected (Every player plays)
@@ -107,7 +132,8 @@ public class GameSetting extends Activity {
                     players = Integer.parseInt(numPlayers.getText().toString()); // getting players
 
                     // randomly location from the array is selected.
-                    location = items[rand.nextInt(items.length)];
+                    location = keysList.get(rand.nextInt(keysList.size()));
+                    roles = gameMap.get(location);
 
                     // goes to the next activity (Display Roles)
                     Intent intent = new Intent(GameSetting.this, DisplayRoles.class);
@@ -140,8 +166,8 @@ public class GameSetting extends Activity {
                 });
 
                 // setting the string based on list array.
-                for (int i = 0; i < items.length; i++){
-                    totalMessage += items[i] + "\n";
+                for (int i = 0; i < keysList.size(); i++) {
+                    totalMessage += keysList.get(i) + "\n";
                 }
 
                 // Chain together various setter methods to set the dialog characteristics
@@ -155,25 +181,6 @@ public class GameSetting extends Activity {
         });
     }
 
-    // goes to the next activity from host game.
-    public void startGame() {
-        goNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // checks to see if any string is entered or not.
-                if (customLocation.getText().toString().equals("")) {
-                    customLocation.setError("Enter valid entry!");
-
-                } else {
-                    location = customLocation.getText().toString(); // getting the custom location
-
-                    Intent intent = new Intent(GameSetting.this, DisplayRoles.class);
-                    startActivity(intent);
-                }
-            }
-        });
-    }
-
     // checks to see if correct number of players is entered or not.
     public boolean playersEntered() {
         boolean result = true;
@@ -183,15 +190,248 @@ public class GameSetting extends Activity {
         return result;
     }
 
-    // ---- getter methods ----
 
-    public static String getLocation() {
-        return location;
+    // ---- Setter methods ----
+
+    // Adds click effect on the round buttons
+    void addClickEffect(View view) {
+        Drawable drawableNormal = view.getBackground();
+
+        Drawable drawablePressed = view.getBackground().getConstantState().newDrawable();
+        drawablePressed.mutate();
+        drawablePressed.setColorFilter(Color.argb(100, 0, 0, 0), PorterDuff.Mode.SRC_ATOP);
+
+        StateListDrawable listDrawable = new StateListDrawable();
+        listDrawable.addState(new int[]{android.R.attr.state_pressed}, drawablePressed);
+        listDrawable.addState(new int[]{}, drawableNormal);
+        view.setBackground(listDrawable);
     }
 
-    public static int getPlayers() {
-        return players;
+    public List<String> getKeysList() {
+        return keysList;
     }
 
 
+    //--- Data structure which holds Location + Roles ---
+
+    private void setGameRoles(Multimap<String, String> gameMap) {
+
+        gameMap.put("Airport", "Flight Attendant");
+        gameMap.put("Airport", "Pilot");
+        gameMap.put("Airport", "Service Agent");
+        gameMap.put("Airport", "Traffic Controller");
+        gameMap.put("Airport", "Flight Dispatcher");
+
+        gameMap.put("Amusement Park", "Ride Controller");
+        gameMap.put("Amusement Park", "Clean-up Crew Member");
+        gameMap.put("Amusement Park", "Ride Mechanic");
+        gameMap.put("Amusement Park", "Ticket Seller");
+        gameMap.put("Amusement Park", "Security Guard");
+
+        gameMap.put("Bank", "Trader");
+        gameMap.put("Bank", "Fund Manager");
+        gameMap.put("Bank", "Client Adviser");
+        gameMap.put("Bank", "Security & Fraud Specialist");
+        gameMap.put("Bank", "Teller");
+        gameMap.put("Bank", "Loan Officer");
+
+        gameMap.put("Beach", "Lifeguard");
+        gameMap.put("Beach", "Garbage Collector");
+        gameMap.put("Beach", "Visitor");
+        gameMap.put("Beach", "Boat Driver ");
+        gameMap.put("Beach", "Swimmer");
+
+        gameMap.put("Broadway Theater", "Stage Manager");
+        gameMap.put("Broadway Theater", "Actor");
+        gameMap.put("Broadway Theater", "Show Viewer");
+        gameMap.put("Broadway Theater", "Makeup Artist");
+        gameMap.put("Broadway Theater", "Scenic Carpenter");
+
+        gameMap.put("Camping Resort", "Site Manager");
+        gameMap.put("Camping Resort", "Tourist Guider");
+        gameMap.put("Camping Resort", "Parking Enforcement Officer");
+        gameMap.put("Camping Resort", "Tent Seller");
+
+        gameMap.put("Casino", "Cage Cashier");
+        gameMap.put("Casino", "Dealer");
+        gameMap.put("Casino", "Surveillance Manager");
+        gameMap.put("Casino", "Security Guard");
+        gameMap.put("Casino", "Accountant");
+
+        gameMap.put("Circus", "Entertainer");
+        gameMap.put("Circus", "Clown");
+        gameMap.put("Circus", "Stage Manager");
+        gameMap.put("Circus", "Makeup Artist");
+        gameMap.put("Circus", "Show Planner");
+
+        gameMap.put("Carnival", "Announcer");
+        gameMap.put("Carnival", "Salesman");
+        gameMap.put("Carnival", "Police Officer");
+        gameMap.put("Carnival", "Game Organizer");
+        gameMap.put("Carnival", "Ride Operator");
+
+        gameMap.put("Embassy", "Political Officer");
+        gameMap.put("Embassy", "Consular Officer");
+        gameMap.put("Embassy", "Ambassador");
+        gameMap.put("Embassy", "Mailroom Clerk");
+        gameMap.put("Embassy", "Administrative Coordinator");
+
+        gameMap.put("Hospital", "Doctor");
+        gameMap.put("Hospital", "Nurse");
+        gameMap.put("Hospital", "Pharmacists");
+        gameMap.put("Hospital", "Medical Lab Technologists");
+        gameMap.put("Hospital", "Therapists");
+
+        gameMap.put("Hotel", "Manger");
+        gameMap.put("Hotel", "Chef");
+        gameMap.put("Hotel", "Housekeeper");
+        gameMap.put("Hotel", "Waiter");
+        gameMap.put("Hotel", "Concierge");
+
+        gameMap.put("Jail", "Inmate");
+        gameMap.put("Jail", "Police Officer");
+        gameMap.put("Jail", "Surveillance Officer");
+        gameMap.put("Jail", "Health Inspector");
+        gameMap.put("Jail", "Chef");
+
+        gameMap.put("Laboratory", "Assistant Technician");
+        gameMap.put("Laboratory", "Laboratory Manager");
+        gameMap.put("Laboratory", "Report Analyser");
+        gameMap.put("Laboratory", "Sterile Processor");
+
+        gameMap.put("Military Base", "Tank Rider");
+        gameMap.put("Military Base", "Equipment Distributor");
+        gameMap.put("Military Base", "Militant");
+        gameMap.put("Military Base", "Captain");
+        gameMap.put("Military Base", "Commander");
+
+        gameMap.put("Movie Studio", "Production Manager");
+        gameMap.put("Movie Studio", "Actor");
+        gameMap.put("Movie Studio", "Makeup Artist");
+        gameMap.put("Movie Studio", "Stunt Artist");
+        gameMap.put("Movie Studio", "Director");
+        gameMap.put("Movie Studio", "Light Crew Memeber");
+
+        gameMap.put("Museum", "Director");
+        gameMap.put("Museum", "Curator");
+        gameMap.put("Museum", "Registrar");
+        gameMap.put("Museum", "Educator");
+        gameMap.put("Museum", "Docent");
+        gameMap.put("Museum", "Exhibit Designer");
+        gameMap.put("Museum", "Shop Manager");
+
+        gameMap.put("Ocean liner", "Deck Crew Member");
+        gameMap.put("Ocean liner", "Cruise Director");
+        gameMap.put("Ocean liner", "Casino Staff");
+        gameMap.put("Ocean liner", "Entertainer");
+        gameMap.put("Ocean liner", "Lifeguard");
+        gameMap.put("Ocean liner", "Message Tehrapists");
+
+        gameMap.put("Office", "Engineer");
+        gameMap.put("Office", "Tester");
+        gameMap.put("Office", "Manager");
+        gameMap.put("Office", "Executive Vise President");
+        gameMap.put("Office", "CEO");
+
+        gameMap.put("Pirate Ship", "The Captain");
+        gameMap.put("Pirate Ship", "Quartermaster");
+        gameMap.put("Pirate Ship", "Boatswain");
+        gameMap.put("Pirate Ship", "Gunner");
+        gameMap.put("Pirate Ship", "Carpenter");
+
+        gameMap.put("Police Station", "Officer");
+        gameMap.put("Police Station", "Chief");
+        gameMap.put("Police Station", "Detective");
+        gameMap.put("Police Station", "Crime Scene Investigator");
+        gameMap.put("Police Station", "Victim Advocate");
+
+        gameMap.put("Parliament", "Senator");
+        gameMap.put("Parliament", "PM");
+        gameMap.put("Parliament", "Judge");
+        gameMap.put("Parliament", "Foreign Minister");
+        gameMap.put("Parliament", "Trade Minister");
+        gameMap.put("Parliament", "Financial Advisor");
+
+        gameMap.put("Restaurant", "Chef");
+        gameMap.put("Restaurant", "Waiter");
+        gameMap.put("Restaurant", "Bartender");
+        gameMap.put("Restaurant", "Catering Manager");
+        gameMap.put("Restaurant", "Bus Person");
+
+        gameMap.put("Spa", "Therapists");
+        gameMap.put("Spa", "Pedicurist");
+        gameMap.put("Spa", "Manicurist");
+        gameMap.put("Spa", "Facial Massage Person");
+        gameMap.put("Spa", "Waxing Person");
+
+        gameMap.put("Service Station", "Gas Filler");
+        gameMap.put("Service Station", "Lotty Ticket Seller");
+        gameMap.put("Service Station", "Trash Collector");
+        gameMap.put("Service Station", "Store Clerk");
+        gameMap.put("Service Station", "Tire Pressure checker");
+
+        gameMap.put("Space Station", "Spaceflight Participant");
+        gameMap.put("Space Station", "Astronaut");
+        gameMap.put("Space Station", "Researcher");
+        gameMap.put("Space Station", "Engineer");
+        gameMap.put("Space Station", "Flight Controller");
+
+        gameMap.put("Submarine", "Fire Control Technician");
+        gameMap.put("Submarine", "Solar Technician");
+        gameMap.put("Submarine", "Controller");
+        gameMap.put("Submarine", "Mechinist Mate");
+        gameMap.put("Submarine", "Handler");
+
+        gameMap.put("Supermarket", "Manger");
+        gameMap.put("Supermarket", "Cashier");
+        gameMap.put("Supermarket", "Stock Clerk");
+        gameMap.put("Supermarket", "Florist Assistant");
+        gameMap.put("Supermarket", "Customer Service Representative");
+
+        gameMap.put("School", "Principle");
+        gameMap.put("School", "Guidance Counselor");
+        gameMap.put("School", "Library Technician");
+        gameMap.put("School", "Teacher");
+        gameMap.put("School", "Invigilator");
+        gameMap.put("School", "Administrator");
+
+        gameMap.put("Strip Club", "Security Guard");
+        gameMap.put("Strip Club", "Entertainer");
+        gameMap.put("Strip Club", "Dancer");
+        gameMap.put("Strip Club", "Manger");
+        gameMap.put("Strip Club", "Announcer");
+
+        gameMap.put("Subway", "Transit Operator");
+        gameMap.put("Subway", "Schedule Maker");
+        gameMap.put("Subway", "Manager");
+        gameMap.put("Subway", "Mechanic");
+        gameMap.put("Subway", "Garbage Collector");
+
+        gameMap.put("Movie Theater", "Ticket Seller");
+        gameMap.put("Movie Theater", "Ticker Checker");
+        gameMap.put("Movie Theater", "Store Clerk");
+        gameMap.put("Movie Theater", "Manager");
+        gameMap.put("Movie Theater", "Projector Handler");
+
+        gameMap.put("Train Station", "Conductor");
+        gameMap.put("Train Station", "Locomotive Engineer");
+        gameMap.put("Train Station", "Constable");
+        gameMap.put("Train Station", "Ticket Seller");
+        gameMap.put("Train Station", "Cleaner");
+
+        gameMap.put("University", "Professor");
+        gameMap.put("University", "Administrator");
+        gameMap.put("University", "Financial Counselor");
+        gameMap.put("University", "Academic Adviser");
+        gameMap.put("University", "Lab Technician");
+        gameMap.put("University", "Researcher");
+
+        gameMap.put("Zoo", "Veterinary Technician");
+        gameMap.put("Zoo", "General Curator");
+        gameMap.put("Zoo", "Director");
+        gameMap.put("Zoo", "Animal Curator");
+        gameMap.put("Zoo", "Zoologist");
+        gameMap.put("Zoo", "Educator");
+
+    }
 }

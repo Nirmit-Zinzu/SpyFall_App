@@ -3,84 +3,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_main"
     android:padding="10dp"
-    tools:context="com.nirmit.spyfall.DisplayRoles"
-    android:background="#f8010b18">
+    tools:context="com.nirmit.spyfall.DisplayRoles">
 
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/blank"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:clickable="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:background="#aad4d4"-->
+    <!--android:contentDescription="@string/blankPage"/>-->
 
-    <ImageView
+    <Button
+        android:id="@+id/pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/blank"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentTop="true"
-        android:clickable="true"
-        android:layout_alignEnd="@+id/information"
-        android:layout_alignParentStart="true"
-        android:background="#aad4d4"
-        android:contentDescription="@string/blankPage"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/information"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentTop="true"
-        android:clickable="true"
-        android:background="#003855"
-        android:contentDescription="@string/informationPage"/>
+        android:layout_alignParentStart="true"
+        android:background="@drawable/round_btn_displayroles"
+        android:contentDescription="@string/passBtn"
+        android:gravity="center"
+        android:src="@drawable/pass_next_effect"
+        android:text="\nT A P \n\n Pass the device to next person\n"
+        android:textColor="#87ae9e"
+        android:textSize="20sp" />
 
-    <ImageButton
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:id="@+id/tapMe"
-        android:padding="10dp"
-        android:src="@drawable/tap_me"
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/information"-->
+    <!--android:clickable="true"-->
+    <!--android:background="#003855"-->
+    <!--android:contentDescription="@string/informationPage"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentStart="true" />-->
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:scaleType="fitXY"
-        android:background="#7a99b4"
-        android:contentDescription="@string/tapMeBtn"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/locationEx"
-        android:id="@+id/role"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#7a99b4"
-        android:textSize="50sp"
-        android:layout_marginBottom="84dp"
-        android:layout_above="@+id/pass"
-        android:layout_centerHorizontal="true" />
-
-
+        android:textSize="30sp" />
 
     <TextView
+        android:id="@+id/locationRole"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/playerNum"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/location"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="asdfasdf"
+        android:textColor="#7a99b4"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/tapMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/locationRole"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_btn_displayroles"
+        android:gravity="center"
+        android:padding="50dp"
+        android:text="T A P"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
         android:id="@+id/playerNumber"
-        android:layout_marginStart="40dp"
-        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:id="@+id/pass"
-        android:scaleType="fitXY"
-        android:src="@drawable/pass_next"
-        android:layout_alignParentBottom="true"
-        android:background="#000000"
-        android:contentDescription="@string/passBtn"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="33dp"
+        android:text="@string/playerNum"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
 
 
 </RelativeLayout>

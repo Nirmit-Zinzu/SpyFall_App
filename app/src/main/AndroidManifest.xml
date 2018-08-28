@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nirmit.spyfall"
-    android:versionCode="3"
-    android:versionName="1.3">
+    package="com.nirmit.spyfall">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,40 +10,37 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:label="Spy Fall"
-            android:screenOrientation="portrait"
-            android:largeHeap="true">
+            android:largeHeap="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".GameSetting"
             android:label="Game Setting"
+            android:largeHeap="true"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden"
-            android:largeHeap="true"/>
-
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".DisplayRoles"
             android:label="Display Location"
+            android:largeHeap="true"
             android:parentActivityName=".GameSetting"
-            android:screenOrientation="portrait"
-            android:largeHeap="true"/>
-
-
-        <activity android:name=".EndGame"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EndGame"
             android:label="End Game"
+            android:largeHeap="true"
             android:parentActivityName=".DisplayRoles"
-            android:screenOrientation="portrait"
-            android:largeHeap="true"/>
-
+            android:screenOrientation="portrait" />
+        <activity android:name=".EnterRoles"></activity>
     </application>
 
 </manifest>
