@@ -2397,7 +2397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535514138963</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Users can now view roles for each location under list. &#10;+ Location &amp; Roles">
+      <created>1535515712705</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1535515712706</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
