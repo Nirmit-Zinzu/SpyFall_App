@@ -168,6 +168,11 @@ public class GameSetting extends Activity {
                 // setting the string based on list array.
                 for (int i = 0; i < keysList.size(); i++) {
                     totalMessage += keysList.get(i) + "\n";
+                    System.out.println("i = " + i + ", location = " + keysList.get(i));
+                    Collection<String> roles = gameMap.get(keysList.get(i));
+                    for (int j = 0; j < roles.size(); j++) {
+                        totalMessage += "\t\t• " + roles.toArray()[j] + "\n";
+                    }
                 }
 
                 // Chain together various setter methods to set the dialog characteristics
@@ -221,6 +226,9 @@ public class GameSetting extends Activity {
         gameMap.put("Airport", "Service Agent");
         gameMap.put("Airport", "Traffic Controller");
         gameMap.put("Airport", "Flight Dispatcher");
+        gameMap.put("Airport", "Captain");
+        gameMap.put("Airport", "Passanger");
+        gameMap.put("Airport", "Co-pilot");
 
         gameMap.put("Amusement Park", "Ride Controller");
         gameMap.put("Amusement Park", "Clean-up Crew Member");
@@ -234,12 +242,24 @@ public class GameSetting extends Activity {
         gameMap.put("Bank", "Security & Fraud Specialist");
         gameMap.put("Bank", "Teller");
         gameMap.put("Bank", "Loan Officer");
+        gameMap.put("Bank", "Robber");
+
+        gameMap.put("Baseball Stadium", "Player");
+        gameMap.put("Baseball Stadium", "Captain");
+        gameMap.put("Baseball Stadium", "Security Guard");
+        gameMap.put("Baseball Stadium", "Referee");
+        gameMap.put("Baseball Stadium", "Coach");
+        gameMap.put("Baseball Stadium", "Fielder");
+        gameMap.put("Baseball Stadium", "Cheerleader");
 
         gameMap.put("Beach", "Lifeguard");
         gameMap.put("Beach", "Garbage Collector");
         gameMap.put("Beach", "Visitor");
         gameMap.put("Beach", "Boat Driver ");
         gameMap.put("Beach", "Swimmer");
+        gameMap.put("Beach", "Photographer");
+        gameMap.put("Beach", "Surfer");
+        gameMap.put("Beach", "Diver");
 
         gameMap.put("Broadway Theater", "Stage Manager");
         gameMap.put("Broadway Theater", "Actor");
@@ -252,17 +272,19 @@ public class GameSetting extends Activity {
         gameMap.put("Camping Resort", "Parking Enforcement Officer");
         gameMap.put("Camping Resort", "Tent Seller");
 
+        gameMap.put("Car Shop", "Salesman");
+        gameMap.put("Car Shop", "Mechanic");
+        gameMap.put("Car Shop", "Manager");
+        gameMap.put("Car Shop", "Administrator");
+        gameMap.put("Car Shop", "Delivery Person");
+        gameMap.put("Car Shop", "Shopper");
+
         gameMap.put("Casino", "Cage Cashier");
         gameMap.put("Casino", "Dealer");
         gameMap.put("Casino", "Surveillance Manager");
         gameMap.put("Casino", "Security Guard");
         gameMap.put("Casino", "Accountant");
-
-        gameMap.put("Circus", "Entertainer");
-        gameMap.put("Circus", "Clown");
-        gameMap.put("Circus", "Stage Manager");
-        gameMap.put("Circus", "Makeup Artist");
-        gameMap.put("Circus", "Show Planner");
+        gameMap.put("Casino", "Gambler");
 
         gameMap.put("Carnival", "Announcer");
         gameMap.put("Carnival", "Salesman");
@@ -270,23 +292,51 @@ public class GameSetting extends Activity {
         gameMap.put("Carnival", "Game Organizer");
         gameMap.put("Carnival", "Ride Operator");
 
+        gameMap.put("Church", "Priest");
+        gameMap.put("Church", "Choir Singer");
+        gameMap.put("Church", "Sinner");
+        gameMap.put("Church", "Tourist");
+        gameMap.put("Church", "Visitor");
+        gameMap.put("Church", "Sponsor");
+
+        gameMap.put("Circus", "Entertainer");
+        gameMap.put("Circus", "Clown");
+        gameMap.put("Circus", "Stage Manager");
+        gameMap.put("Circus", "Makeup Artist");
+        gameMap.put("Circus", "Show Planner");
+
+        gameMap.put("Cruise", "Cook");
+        gameMap.put("Cruise", "Captain");
+        gameMap.put("Cruise", "Mechanic");
+        gameMap.put("Cruise", "Lifeguard");
+        gameMap.put("Cruise", "Casino Dealer");
+        gameMap.put("Cruise", "Waiter");
+        gameMap.put("Cruise", "Stand-up Comedy Artist");
+
         gameMap.put("Embassy", "Political Officer");
         gameMap.put("Embassy", "Consular Officer");
         gameMap.put("Embassy", "Ambassador");
         gameMap.put("Embassy", "Mailroom Clerk");
         gameMap.put("Embassy", "Administrative Coordinator");
+        gameMap.put("Embassy", "Refugee");
+        gameMap.put("Embassy", "Government Official");
+        gameMap.put("Embassy", "Secretary");
 
         gameMap.put("Hospital", "Doctor");
         gameMap.put("Hospital", "Nurse");
         gameMap.put("Hospital", "Pharmacists");
         gameMap.put("Hospital", "Medical Lab Technologists");
-        gameMap.put("Hospital", "Therapists");
+        gameMap.put("Hospital", "Therapist");
+        gameMap.put("Hospital", "Surgeon");
+        gameMap.put("Hospital", "Patient");
 
         gameMap.put("Hotel", "Manger");
         gameMap.put("Hotel", "Chef");
         gameMap.put("Hotel", "Housekeeper");
         gameMap.put("Hotel", "Waiter");
         gameMap.put("Hotel", "Concierge");
+        gameMap.put("Hotel", "Security Guard");
+        gameMap.put("Hotel", "Bartender");
 
         gameMap.put("Jail", "Inmate");
         gameMap.put("Jail", "Police Officer");
@@ -300,17 +350,27 @@ public class GameSetting extends Activity {
         gameMap.put("Laboratory", "Sterile Processor");
 
         gameMap.put("Military Base", "Tank Rider");
-        gameMap.put("Military Base", "Equipment Distributor");
+        gameMap.put("Military Base", "Medic");
         gameMap.put("Military Base", "Militant");
         gameMap.put("Military Base", "Captain");
         gameMap.put("Military Base", "Commander");
+        gameMap.put("Military Base", "Sniper");
+        gameMap.put("Military Base", "Colonel");
+        gameMap.put("Military Base", "Nurse");
 
         gameMap.put("Movie Studio", "Production Manager");
         gameMap.put("Movie Studio", "Actor");
         gameMap.put("Movie Studio", "Makeup Artist");
         gameMap.put("Movie Studio", "Stunt Artist");
         gameMap.put("Movie Studio", "Director");
-        gameMap.put("Movie Studio", "Light Crew Memeber");
+        gameMap.put("Movie Studio", "Light Crew Member");
+        gameMap.put("Movie Studio", "Cameraman");
+
+        gameMap.put("Movie Theater", "Ticket Seller");
+        gameMap.put("Movie Theater", "Ticker Checker");
+        gameMap.put("Movie Theater", "Store Clerk");
+        gameMap.put("Movie Theater", "Manager");
+        gameMap.put("Movie Theater", "Projector Handler");
 
         gameMap.put("Museum", "Director");
         gameMap.put("Museum", "Curator");
@@ -337,6 +397,9 @@ public class GameSetting extends Activity {
         gameMap.put("Pirate Ship", "Quartermaster");
         gameMap.put("Pirate Ship", "Boatswain");
         gameMap.put("Pirate Ship", "Gunner");
+        gameMap.put("Pirate Ship", "Slave");
+        gameMap.put("Pirate Ship", "Sailor");
+        gameMap.put("Pirate Ship", "Prisoner");
         gameMap.put("Pirate Ship", "Carpenter");
 
         gameMap.put("Police Station", "Officer");
@@ -352,17 +415,29 @@ public class GameSetting extends Activity {
         gameMap.put("Parliament", "Trade Minister");
         gameMap.put("Parliament", "Financial Advisor");
 
+        gameMap.put("Polar Station", "Biologist");
+        gameMap.put("Polar Station", "Geologist");
+        gameMap.put("Polar Station", "Hydrologist");
+        gameMap.put("Polar Station", "Medic");
+        gameMap.put("Polar Station", "Radioman");
+        gameMap.put("Polar Station", "Control Room Employee");
+
         gameMap.put("Restaurant", "Chef");
         gameMap.put("Restaurant", "Waiter");
         gameMap.put("Restaurant", "Bartender");
         gameMap.put("Restaurant", "Catering Manager");
-        gameMap.put("Restaurant", "Bus Person");
+        gameMap.put("Restaurant", "Musician");
+        gameMap.put("Polar Station", "Owner");
+        gameMap.put("Polar Station", "Customer");
 
         gameMap.put("Spa", "Therapists");
         gameMap.put("Spa", "Pedicurist");
         gameMap.put("Spa", "Manicurist");
         gameMap.put("Spa", "Facial Massage Person");
         gameMap.put("Spa", "Waxing Person");
+        gameMap.put("Spa", "Stylist");
+        gameMap.put("Spa", "Makeup Artist");
+        gameMap.put("Spa", "Customer");
 
         gameMap.put("Service Station", "Gas Filler");
         gameMap.put("Service Station", "Lotty Ticket Seller");
@@ -375,12 +450,14 @@ public class GameSetting extends Activity {
         gameMap.put("Space Station", "Researcher");
         gameMap.put("Space Station", "Engineer");
         gameMap.put("Space Station", "Flight Controller");
+        gameMap.put("Space Station", "Alien");
 
         gameMap.put("Submarine", "Fire Control Technician");
         gameMap.put("Submarine", "Solar Technician");
         gameMap.put("Submarine", "Controller");
         gameMap.put("Submarine", "Mechinist Mate");
         gameMap.put("Submarine", "Handler");
+        gameMap.put("Submarine", "Navigator");
 
         gameMap.put("Supermarket", "Manger");
         gameMap.put("Supermarket", "Cashier");
@@ -407,12 +484,6 @@ public class GameSetting extends Activity {
         gameMap.put("Subway", "Mechanic");
         gameMap.put("Subway", "Garbage Collector");
 
-        gameMap.put("Movie Theater", "Ticket Seller");
-        gameMap.put("Movie Theater", "Ticker Checker");
-        gameMap.put("Movie Theater", "Store Clerk");
-        gameMap.put("Movie Theater", "Manager");
-        gameMap.put("Movie Theater", "Projector Handler");
-
         gameMap.put("Train Station", "Conductor");
         gameMap.put("Train Station", "Locomotive Engineer");
         gameMap.put("Train Station", "Constable");
@@ -425,6 +496,16 @@ public class GameSetting extends Activity {
         gameMap.put("University", "Academic Adviser");
         gameMap.put("University", "Lab Technician");
         gameMap.put("University", "Researcher");
+        gameMap.put("University", "Student");
+        gameMap.put("University", "Teacher's Assistant");
+
+        gameMap.put("Work Party", "HR");
+        gameMap.put("Work Party", "Secretary");
+        gameMap.put("Work Party", "Manager");
+        gameMap.put("Work Party", "CEO");
+        gameMap.put("Work Party", "Delivery Boy");
+        gameMap.put("Work Party", "Party Planner");
+        gameMap.put("Work Party", "Dancer");
 
         gameMap.put("Zoo", "Veterinary Technician");
         gameMap.put("Zoo", "General Curator");

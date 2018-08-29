@@ -2,76 +2,679 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.0/jars/libs/internal_impl-24.1.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.0.18/5f65affce1684999e2f4024983835efc3504012e/error_prone_annotations-2.0.18.jar"
+        jumboMode="false"
         optimize="true"
-        revision="24.0.1"
-        sha1="8c7087216946c546f85a1242a2794c0f271e092c">
-        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.0_48bf7282ef18e378de25c49a8618ac419abaeea4/classes.dex" />
+        revision="26.0.1"
+        sha1="5f65affce1684999e2f4024983835efc3504012e">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/error_prone_annotations-2.0.18_a0b1554eec1146440ecb12c422f3ef94194edecf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-basement-9.2.1_1b3683c44dbb408006155a1784ecafd069db1841.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="081ced8ab77e606b6743c27cfe93dc450447b046">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-gass-9.2.1_2106abbb5d9e4a0a5c1f663734bc367b7bc10922.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/support-annotations-25.3.0_dd9e2d642ae745b71f11aad6f6434fb6fd2cc2e3.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ninizinzu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.0/support-annotations-24.1.0.jar"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.1"
-        sha1="8a23146e1a8c7cb4758e3d3f62449213f1e51f67">
-        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.0_f2f685dc07428e8efb603161690d2def1ba5ea2a/classes.dex" />
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.3.0_0a0f62ddc1c4c0c99f9207b2d0c18c1222568d9d/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support-support-core-utils-25.3.0_8019c336505af5c69e186b762920fe2bc3e65df2.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.1"
-        sha1="1e9a7c515903f5f789681ea3cb55bfc2a75c5214">
-        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_039c5cf6d8772ea8a8d27c5e1c8626913402672c/classes.dex" />
+        revision="26.0.1"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.2.1_86fbfc1f871e08a3ffb648c14b97d1c4c74b4504/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.0/jars/classes.jar"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/2.0.0-alpha2/5bc811fe2082f97d2e6b68e847f31844e4fb10e2/constraint-layout-solver-2.0.0-alpha2.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.1"
-        sha1="e096a5d8343cc9c5a9f6eded36bd0f4c82f8c83e">
-        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.0_095db47e19906cef457ecd3f43153be0812ddc0c/classes.dex" />
+        revision="26.0.1"
+        sha1="5bc811fe2082f97d2e6b68e847f31844e4fb10e2">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-2.0.0-alpha2_cf799d110318e04a4a53129d8c0462b045bf4fe8/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.0/jars/classes.jar"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.1"
-        sha1="8c854b30eca6c442fe842e66cd3b58c5dd08996f">
-        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.0_e3cd0df0bcebee3863306cd1ffb7aefd5b9efa32/classes.dex" />
+        revision="26.0.1"
+        sha1="90eeba67a669f8fb24db0f821ef81703fe7a02bc">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.2.1_c917cef2f0a3817666725c40d715b1d9d3a4ab08/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.0/jars/classes.jar"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.1"
-        sha1="ba8e8860f7e033c3a503b682337a4bafdf56e6ee">
-        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.0_95e822a0fe0083ebc9953561b7fe5c310d7f6989/classes.dex" />
+        revision="26.0.1"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.3.0_08762c24ecdbee6a17b8d249b0bf2971902d1dc0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.2.1_7c2eb2da9dc79b623b76a052460e1b4bcdcde45b/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support-recyclerview-v7-25.3.0_bb726601130f8ea18e10004af2e0f96601380994.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="310ef01419435979cc82847cf085799a8d00e7e9">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.2.1_06549f711e9cd57e2df731872189b8d4e64d9c9d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.3.0_001f94e44bf7bdc6ce68a12969e6943a1457fdc8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.3.0_c8c9700db4f37117ac4446ddaafc94c4cc9ae9e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6d2f508d1a9fa0fbe1653595e484800c08afb42c">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-ads-9.2.1_c3092092ddd8367267052385d538cba71af901d9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.3.0_f3dfeaad269f51ff93180d12e57de8154b50a243/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-base-9.2.1_2f05184f30ae401b1b32549f782fa14d9372b4e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support-support-fragment-25.3.0_6aec59ec9e2867aff68e4d31b2def46805d7c0d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support-support-compat-25.3.0_e06859101561e7e78b6de3f3de1daac5ea87ff1c.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.3.0_36160aa7c8a9f59a6092f60cd3ea4575673acfb6/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="310ef01419435979cc82847cf085799a8d00e7e9">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-ads-lite-9.2.1_9a114e3310dd9dc349bd6475309a2c55157a3acf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support-cardview-v7-25.3.0_c95a6a841dcf9273dd5abc78e9259660803b1e98.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/976d8d30bebc251db406f2bdb3eb01962b5685b3/j2objc-annotations-1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="976d8d30bebc251db406f2bdb3eb01962b5685b3">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/j2objc-annotations-1.1_0f61f33d736933ae7860acf677d8aebdfc5d6c15/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.3.0_dec168db76457f9621e7533907e3cb21bf54a9f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/jsr305-1.3.9_89f8d9b606ba39771d3798facd361e405901c19a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support-support-core-ui-25.3.0_4d59651f14020e2945b27c349d8e6149e018f7fd.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/2.0.0-alpha2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4cae994e55633317869dc72d82bae29c6cb9afad">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.constraint-constraint-layout-2.0.0-alpha2_583ba726562f5e616295be925142e2530c647a0d/classes.dex" />
     </item>
     <item
         is-multidex="true"
         jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.1"
-        sha1="e5241ce60e7275c9667edd63eea8f08179f628c1">
+        revision="26.0.1"
+        sha1="18fd29c3b94b87cf03dceb9cf4b80d2842d19a30">
         <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_967eec7a30fa311aeaca9ad2c819f01e697822f0/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.0/jars/classes.jar"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.1"
-        sha1="9340c4f95a4e3916c9ad70296e24576743743712">
-        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.0_4615754becfba121cd5fef94a45643ec70d17591/classes.dex" />
+        revision="26.0.1"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.3.0_d642f8dba66ee9510e92e77604dd5442a3c9d3a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-25.3.0_172809abf6c8fb811dbdb6dae77c271522b8fa5e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/2.0.0-alpha2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4cae994e55633317869dc72d82bae29c6cb9afad">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.constraint-constraint-layout-2.0.0-alpha2_f3ebba6aafdead5aac75b67c99c1718e560c2a66/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.3.0_9744f3db9df27cb4d5cd5b962775db8c97297d2c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.3.0_e3155e86df14cf36b1868ad1763eaed41d18cf80/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-tasks-9.2.1_a70690fb02c54d2cc4266cc60861a9157772dfe9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.3.0_c8d78b25c87ffb57a28cdf810a795ba558ad5e44/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/775b7e22fb10026eed3f86e8dc556dfafe35f2d5/animal-sniffer-annotations-1.14.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="775b7e22fb10026eed3f86e8dc556dfafe35f2d5">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/animal-sniffer-annotations-1.14_f028aedf5af0fbc4f359d74bd9fa92c07c97d6a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6d2f508d1a9fa0fbe1653595e484800c08afb42c">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.2.1_d7ed3778342aa5e75ad236b2ed28c2b068ad9454/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/23.0-android/24e15a141252eb80c53381d78ef61efd1353763/guava-23.0-android.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="024e15a141252eb80c53381d78ef61efd1353763">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/guava-23.0-android_43b58f355fa08005588605cba7893d3650367863.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-25.3.0_0a0f62ddc1c4c0c99f9207b2d0c18c1222568d9d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.0_dd9e2d642ae745b71f11aad6f6434fb6fd2cc2e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.3.0_bb726601130f8ea18e10004af2e0f96601380994/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.0.18/5f65affce1684999e2f4024983835efc3504012e/error_prone_annotations-2.0.18.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5f65affce1684999e2f4024983835efc3504012e">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/error_prone_annotations-2.0.18_a0b1554eec1146440ecb12c422f3ef94194edecf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.2.1_1b3683c44dbb408006155a1784ecafd069db1841/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.3.0_c0159b1f56854ad6a2d8c51f31d170f707d67a3c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="081ced8ab77e606b6743c27cfe93dc450447b046">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.2.1_2106abbb5d9e4a0a5c1f663734bc367b7bc10922/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.3.0_8019c336505af5c69e186b762920fe2bc3e65df2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="081ced8ab77e606b6743c27cfe93dc450447b046">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.2.1_dca553863043753d152d588ead56436f7af94bee/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/2.0.0-alpha2/5bc811fe2082f97d2e6b68e847f31844e4fb10e2/constraint-layout-solver-2.0.0-alpha2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5bc811fe2082f97d2e6b68e847f31844e4fb10e2">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/constraint-layout-solver-2.0.0-alpha2_cf799d110318e04a4a53129d8c0462b045bf4fe8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="90eeba67a669f8fb24db0f821ef81703fe7a02bc">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-clearcut-9.2.1_c917cef2f0a3817666725c40d715b1d9d3a4ab08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-25.3.0_001f94e44bf7bdc6ce68a12969e6943a1457fdc8.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.2.1_2f05184f30ae401b1b32549f782fa14d9372b4e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6d2f508d1a9fa0fbe1653595e484800c08afb42c">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.2.1_c3092092ddd8367267052385d538cba71af901d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.3.0_6aec59ec9e2867aff68e4d31b2def46805d7c0d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.3.0_e06859101561e7e78b6de3f3de1daac5ea87ff1c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b16e3e1136ea32bdd96c23f79419b061d2abdc87">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f7afec1c43e4b492b0a14e5aa1a56062b6766e3b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.3.0_c95a6a841dcf9273dd5abc78e9259660803b1e98/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="90eeba67a669f8fb24db0f821ef81703fe7a02bc">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.2.1_b08b370713d84a4fb1218a60f7fc5da7b1e7f106/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support-support-media-compat-25.3.0_36160aa7c8a9f59a6092f60cd3ea4575673acfb6.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.3.0_9b37134ee242b8317150f87a4c0fc9e387501790/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="310ef01419435979cc82847cf085799a8d00e7e9">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.2.1_9a114e3310dd9dc349bd6475309a2c55157a3acf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1019149e6bb13c9f5272c81d25824950e9f91c76">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5a441b47c2535189afead1d0beaaec47fd3310e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.3.0_4d59651f14020e2945b27c349d8e6149e018f7fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/23.0-android/24e15a141252eb80c53381d78ef61efd1353763/guava-23.0-android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="024e15a141252eb80c53381d78ef61efd1353763">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/guava-23.0-android_43b58f355fa08005588605cba7893d3650367863/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/976d8d30bebc251db406f2bdb3eb01962b5685b3/j2objc-annotations-1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="976d8d30bebc251db406f2bdb3eb01962b5685b3">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/j2objc-annotations-1.1_0f61f33d736933ae7860acf677d8aebdfc5d6c15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/jsr305-1.3.9_89f8d9b606ba39771d3798facd361e405901c19a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9372744a4dda7406f43485b4e025623494147aee">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_039c5cf6d8772ea8a8d27c5e1c8626913402672c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.2.1_1e09afc838f709426d516ba6f1f3865278ccc48c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.3.0_92c4fe054bfaca9b8ae185362835f0de61a4b227/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/2.0.0-alpha2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4cae994e55633317869dc72d82bae29c6cb9afad">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support.constraint-constraint-layout-2.0.0-alpha2_f3ebba6aafdead5aac75b67c99c1718e560c2a66.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.3.0_172809abf6c8fb811dbdb6dae77c271522b8fa5e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.2.1_a70690fb02c54d2cc4266cc60861a9157772dfe9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.3.0_66bde388f7bd4572fea493e7d2d8ce46ad717c53/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/775b7e22fb10026eed3f86e8dc556dfafe35f2d5/animal-sniffer-annotations-1.14.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="775b7e22fb10026eed3f86e8dc556dfafe35f2d5">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/animal-sniffer-annotations-1.14_f028aedf5af0fbc4f359d74bd9fa92c07c97d6a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Users/ninizinzu/AndroidStudioProjects/SpyFall_App/app/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-25.3.0_c8d78b25c87ffb57a28cdf810a795ba558ad5e44.jar" />
     </item>
 
 </items>
